@@ -6,7 +6,7 @@ class X12Parser {
     fieldSeparator = ':';
 
     constructor() {
-        const submitButton = document.querySelector('.submitX12');
+        const submitButton = document.getElementById('submitX12');
         submitButton.addEventListener('click', () => { this.parse(); });
     }
 
@@ -15,7 +15,7 @@ class X12Parser {
      * @param {string} text 
      */
     parse() {
-        const textElement = document.querySelector('.claimX12');
+        const textElement = document.getElementById('claimX12');
         const text = textElement.textContent;
 
         let results = '';
@@ -29,7 +29,7 @@ class X12Parser {
             results += '\n';
         }
 
-        const resultElement = document.querySelector('.claimResult');
+        const resultElement = document.getElementById('claimResult');
         resultElement.textContent = results;
     }
 }
