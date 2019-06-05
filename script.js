@@ -16,7 +16,7 @@ class X12Parser {
      */
     parse() {
         const textElement = document.getElementById('claimX12');
-        const text = textElement.textContent;
+        const text = textElement.value;
 
         let results = '';
         const segments = text.split(this.segmentSeparator);
