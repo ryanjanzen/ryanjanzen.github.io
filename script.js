@@ -6,7 +6,7 @@ class X12Parser {
     fieldSeparator = ':';
 
     constructor() {
-        const submitButton = document.querySelector('.submitClaim');
+        const submitButton = document.querySelector('.submitX12');
         submitButton.addEventListener('click', () => { this.parse(); });
     }
 
